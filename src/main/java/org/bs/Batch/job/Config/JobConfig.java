@@ -13,6 +13,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
+/*
+* desc: 스프링 배치 기본 구조 테스트
+* run: --spring.batch.job.name=testJob <- JobBuilder로 생성된 이름 작성
+* */
 @Log4j2
 @Configuration
 public class JobConfig {
