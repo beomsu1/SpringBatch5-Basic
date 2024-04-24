@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  mysql:
+    container_name: spring_batch
+    image: library/mysql:8.0.33
+    environment:
+      MYSQL_DATABASE: "spring_batch"
+      MYSQL_ROOT_PASSWORD: "admin"
+      TZ: "Asia/Seoul"
+    ports:
+      - "3306:3306"
