@@ -1,0 +1,7 @@
+ID,lastName,position,yearExperience
+AbduKa00,Abdul-Jabbar,rb,28
+AbduRa00,Abdullah,rb,25
+AberWa00,Abercrombie,rb,42
+AbraDa00,Abramowicz,wr,57
+AdamBo00,Adams,te,55
+AdamCh00,Adams,wr,21
