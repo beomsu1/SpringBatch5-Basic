@@ -6,6 +6,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableAutoConfiguration
-@EnableBatchProcessing
+// @EnableBatchProcessing ---------- Spring Batch 5 부터는 사용 X
 public class SpringBatchTestConfig {
 }

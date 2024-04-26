@@ -6,6 +6,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
+// @EnableBatchProcessing ---------- Spring Batch 5 부터는 사용 X
 public class BatchApplication {
 
 	public static void main(String[] args) {
