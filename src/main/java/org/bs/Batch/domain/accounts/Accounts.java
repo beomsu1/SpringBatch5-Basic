@@ -4,16 +4,17 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import org.bs.Batch.domain.orders.Orders;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Getter
 @ToString
 @Entity
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor
 public class Accounts {
 
@@ -22,14 +23,14 @@ public class Accounts {
     private Long id;
     private String orderItem;
     private Integer price;
-    private LocalDateTime orderDate;
-    private LocalDateTime accountDate;
+    private Date orderDate;
+    private Date accountDate;
 
     public Accounts(Orders orders){
         this.id = orders.getId();
         this.orderItem = orders.getOrderItem();
         this.price = orders.getPrice();
         this.orderDate = orders.getOrderDate();
-        this.accountDate = LocalDateTime.now();
+        this.accountDate = new Date();
     }
 }
